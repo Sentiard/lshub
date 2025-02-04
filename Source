@@ -1,18 +1,17 @@
 --- Made By @Ledolium
 --- BackUp : https://pastebin.com/i0sK0Ety
 --- L's Script Hub Password : Sentiard
-
+--- V0.4
 --- RayField
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 --- RayField
  
 --- Window Start
 local Window = Rayfield:CreateWindow({
-   HubVersion == 0.3
    Name = "Script Hub",
    Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
    LoadingTitle = "L's Script Hub",
-   LoadingSubtitle = "by @Ledolium V+ HubVersion +",
+   LoadingSubtitle = "by @Ledolium V0.4",
    Theme = "Default", -- Check https://docs.sirius.menu/rayfield/configuration/themes
  
    DisableRayfieldPrompts = false,
