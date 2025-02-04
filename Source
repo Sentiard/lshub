@@ -74,7 +74,7 @@ local Button = MainTab:CreateButton({
 })
  
 local Button = MainTab:CreateButton({
-   Name = "BedWars Script",
+   Name = "King Lagacy Script",
    Callback = function()
    getgenv().RaidUI = false -- For Hidden Raid Mode true = show and false = hidden
    getgenv().CustomDistance = 10 -- For Bug Can't Swipe Distance
