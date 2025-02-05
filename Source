@@ -55,15 +55,6 @@ local MainSection = MainTab:CreateSection("Main")
  
 --- Main Tab Button Start
 
---- Ctrl C + V
---local Button = MainTab:CreateButton({
---   Name = "Nil",
---   Callback = function()
--- loadstring(game:HttpGet(""))()
---   end,
---})
-
-
 --- Infinity Yield Script
 local Button = MainTab:CreateButton({
    Name = "Infinity Yield",
