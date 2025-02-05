@@ -110,7 +110,6 @@ local Button = MainTab:CreateButton({
    end,
 })
 
-https://raw.githubusercontent.com/NICKISBAD/Randomly-Generated-Droids/refs/heads/main/V1.1
 --- Main Tab Button End
  
 --- Misc Tab Start
