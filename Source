@@ -1,5 +1,5 @@
 --[[
-  |Version = 1.2 (Error Fixed)
+  |Version = 1.3 (icon Update)
    |Scripts : Infinity Yield, Fisch, BedWars, King Lagacy, Rival, Prison Life, The Strongest Battle Ground, Randomly Generated Droids, Parkour -- A total of 9 scripts
     |Lastest Update = 2025-02-05
      |Made By @Ledolium 
@@ -12,9 +12,9 @@ local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 --- Window Start
 local Window = Rayfield:CreateWindow({
    Name = "Script Hub",
-   Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
+   Icon = 10783216498, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
    LoadingTitle = "L's Script Hub",
-   LoadingSubtitle = "by @Ledolium V1.0",
+   LoadingSubtitle = "by @Ledolium V1.3",
    Theme = "DarkBlue", -- Check https://docs.sirius.menu/rayfield/configuration/themes
  
    DisableRayfieldPrompts = false,
@@ -24,7 +24,7 @@ local Window = Rayfield:CreateWindow({
  --- ConfigurationSaving
    ConfigurationSaving = {
       Enabled = true,
-      FolderName = nil, -- Create a custom folder for your hub/game
+      FolderName = LSHub, -- Create a custom folder for your hub/game
       FileName = "SaveFile"
    },
 --- ConfigurationSaving
