@@ -52,7 +52,7 @@ local Window = Rayfield:CreateWindow({
 --- Key System End
  
 --- Main Tab Start
-local MainTab = Window:CreateTab("Main", 10783216498) -- Title, Image
+local MainTab = Window:CreateTab("Main", 903318290) -- Title, Image
 local MainSection = MainTab:CreateSection("Main")
 --- Main Tab End
  
