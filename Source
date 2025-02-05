@@ -1,7 +1,10 @@
---- Made By @Ledolium
---- BackUp : https://pastebin.com/i0sK0Ety
---- L's Script Hub Password : Sentiard
---- V1.0
+--[[
+  |Version = 1.1
+   |Scripts : Infinity Yeild, Fisch, BedWars, King Lagacy, Rival, Prison Life, The Strongest Battle Ground, Randomly Generated Droids, Parkour -- A total of 9 scripts
+    |Lastest Update = 2025-02-05
+     |Made By @Ledolium 
+]]
+
 --- RayField
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 --- RayField
@@ -54,6 +57,16 @@ local MainSection = MainTab:CreateSection("Main")
 --- Main Tab End
  
 --- Main Tab Button Start
+
+--[[
+     Ctrl C + V
+local Button = MainTab:CreateButton({ 
+   Name = "",
+   Callback = function()
+ loadstring(game:HttpGet(""))()
+   end,
+})
+]]
 
 --- Infinity Yield Script
 local Button = MainTab:CreateButton({
