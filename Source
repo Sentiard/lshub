@@ -1,6 +1,6 @@
 --[[
-  |Version = 1.1
-   |Scripts : Infinity Yeild, Fisch, BedWars, King Lagacy, Rival, Prison Life, The Strongest Battle Ground, Randomly Generated Droids, Parkour -- A total of 9 scripts
+  |Version = 1.2 (Error Fixed)
+   |Scripts : Infinity Yield, Fisch, BedWars, King Lagacy, Rival, Prison Life, The Strongest Battle Ground, Randomly Generated Droids, Parkour -- A total of 9 scripts
     |Lastest Update = 2025-02-05
      |Made By @Ledolium 
 ]]
@@ -136,7 +136,7 @@ local Button = MainTab:CreateButton({
 local Button = MainTab:CreateButton({
    Name = "Parkour Script",
    Callback = function()
- loadstring(game:HttpGet("loadstring(game:HttpGet("https://raw.githubusercontent.com/charlesqwc/ParkourLegacyOPPoints/main/Points"))()"))()
+ loadstring(game:HttpGet("https://raw.githubusercontent.com/charlesqwc/ParkourLegacyOPPoints/main/Points"))()
    end,
 })
 
