@@ -1,7 +1,7 @@
 --- Made By @Ledolium
 --- BackUp : https://pastebin.com/i0sK0Ety
 --- L's Script Hub Password : Sentiard
---- V0.8
+--- V0.9
 --- RayField
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 --- RayField
@@ -11,7 +11,7 @@ local Window = Rayfield:CreateWindow({
    Name = "Script Hub",
    Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
    LoadingTitle = "L's Script Hub",
-   LoadingSubtitle = "by @Ledolium V0.8",
+   LoadingSubtitle = "by @Ledolium V0.9",
    Theme = "Default", -- Check https://docs.sirius.menu/rayfield/configuration/themes
  
    DisableRayfieldPrompts = false,
@@ -102,6 +102,15 @@ local Button = MainTab:CreateButton({
  loadstring(game:HttpGet("https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/main/scripts/TSBUtils.lua"))()
    end,
 })
+
+local Button = MainTab:CreateButton({
+   Name = "RGD Script",
+   Callback = function()
+ loadstring(game:HttpGet("https://raw.githubusercontent.com/NICKISBAD/Randomly-Generated-Droids/refs/heads/main/V1.1"))()
+   end,
+})
+
+https://raw.githubusercontent.com/NICKISBAD/Randomly-Generated-Droids/refs/heads/main/V1.1
 --- Main Tab Button End
  
 --- Misc Tab Start
