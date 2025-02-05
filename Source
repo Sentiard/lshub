@@ -147,12 +147,4 @@ local Slider = MiscTab:CreateSlider({
    end,
 })
 
---- Print
-local Button = MiscTab:CreateButton({ 
-   Name = "Print ('im Cool')",
-   Callback = function()
- print ("im Cool")
-   end,
-})
-
 --- Misc Tab Button End
