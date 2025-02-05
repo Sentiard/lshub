@@ -1,7 +1,7 @@
 --- Made By @Ledolium
 --- BackUp : https://pastebin.com/i0sK0Ety
 --- L's Script Hub Password : Sentiard
---- V0.9
+--- V1.0
 --- RayField
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 --- RayField
@@ -11,8 +11,8 @@ local Window = Rayfield:CreateWindow({
    Name = "Script Hub",
    Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
    LoadingTitle = "L's Script Hub",
-   LoadingSubtitle = "by @Ledolium V0.9",
-   Theme = "Default", -- Check https://docs.sirius.menu/rayfield/configuration/themes
+   LoadingSubtitle = "by @Ledolium V1.0",
+   Theme = "DarkBlue", -- Check https://docs.sirius.menu/rayfield/configuration/themes
  
    DisableRayfieldPrompts = false,
    DisableBuildWarnings = false, -- Prevents Rayfield from warning when the script has a version mismatch with the interface
@@ -54,48 +54,65 @@ local MainSection = MainTab:CreateSection("Main")
 --- Main Tab End
  
 --- Main Tab Button Start
+//
+--- Ctrl C + V
+local Button = MainTab:CreateButton({
+   Name = "Nil",
+   Callback = function()
+ loadstring(game:HttpGet(""))()
+   end,
+})
+//
+
+--- Infinity Yield Script
 local Button = MainTab:CreateButton({
    Name = "Infinity Yield",
    Callback = function()
    loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
    end,
 })
- 
+
+--- Fisch Script
 local Button = MainTab:CreateButton({
    Name = "Fisch Script",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/kylosilly/femboyware/refs/heads/main/Fisch.lua"))()
    end,
 })
- 
+
+--- BedWars Script
 local Button = MainTab:CreateButton({
    Name = "BedWars Script",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/VapeVoidware/vapevoidware/main/NewMainScript.lua", true))()
    end,
 })
- 
+
+--- KL Script
 local Button = MainTab:CreateButton({
    Name = "King Lagacy Script",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/ChopLoris/ArcHub/main/main.lua"))()
    end,
 })
- 
+
+--- Rival Script
 local Button = MainTab:CreateButton({
    Name = "Rival Script",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/QP-Korea/ScriptForRoblox/refs/heads/main/Rivals"))()
    end,
 })
- 
+
+--- PL Script
 local Button = MainTab:CreateButton({
    Name = "Prison Life Script",
    Callback = function()
    loadstring(game:HttpGet('https://raw.githubusercontent.com/elliexmln/PrizzLife/main/pladmin.lua'))()
    end,
 })
- 
+
+--- TSB Script
 local Button = MainTab:CreateButton({
    Name = "TSB Script",
    Callback = function()
@@ -103,10 +120,19 @@ local Button = MainTab:CreateButton({
    end,
 })
 
+--- RGD Script
 local Button = MainTab:CreateButton({
    Name = "RGD Script",
    Callback = function()
  loadstring(game:HttpGet("https://raw.githubusercontent.com/NICKISBAD/Randomly-Generated-Droids/refs/heads/main/V1.1"))()
+   end,
+})
+
+--- Parkour script
+local Button = MainTab:CreateButton({
+   Name = "Parkour Script",
+   Callback = function()
+ loadstring(game:HttpGet("loadstring(game:HttpGet("https://raw.githubusercontent.com/charlesqwc/ParkourLegacyOPPoints/main/Points"))()"))()
    end,
 })
 
@@ -129,4 +155,13 @@ local Slider = MiscTab:CreateSlider({
      game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = (Value)
    end,
 })
+
+--- Print
+local Button = MiscTab:CreateButton({ 
+   Name = "Print ('im Cool')",
+   Callback = function()
+ print ("im Cool")
+   end,
+})
+
 --- Misc Tab Button End
