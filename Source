@@ -1,5 +1,5 @@
 --[[
-  |Version = 1.4 (icon Fix)
+  |Version = 1.5 (New Script)
    |Scripts : Infinity Yield, Fisch, BedWars, King Lagacy, Rival, Prison Life, The Strongest Battle Ground, Randomly Generated Droids, Parkour -- A total of 9 scripts
     |Lastest Update = 2025-02-05
      |Made By @Ledolium 
@@ -14,7 +14,7 @@ local Window = Rayfield:CreateWindow({
    Name = "Script Hub",
    Icon = 10783216485, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
    LoadingTitle = "L's Script Hub",
-   LoadingSubtitle = "by @Ledolium V1.4",
+   LoadingSubtitle = "by @Ledolium V1.5",
    Theme = "DarkBlue", -- Check https://docs.sirius.menu/rayfield/configuration/themes
  
    DisableRayfieldPrompts = false,
@@ -81,6 +81,14 @@ local Button = MainTab:CreateButton({
    Name = "Fisch Script",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/kylosilly/femboyware/refs/heads/main/Fisch.lua"))()
+   end,
+})
+
+--- Fisch Script 2
+local Button = MainTab:CreateButton({ 
+   Name = "",
+   Callback = function()
+ loadstring(game:HttpGet("https://raw.githubusercontent.com/Just3itx/Lunor-Loadstrings/refs/heads/main/Loader"))()
    end,
 })
 
