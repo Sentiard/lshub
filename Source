@@ -1,43 +1,42 @@
 --[[
-  |Version = 1.55 (Script)
-   |Scripts : Infinity Yield, Fisch, BedWars, King Lagacy, Rival, Prison Life, The Strongest Battle Ground, Randomly Generated Droids, Parkour -- A total of 9 scripts
-    |Lastest Update = 2025-02-05
+  |Version = 2.0 (Big Update)
+   |Scripts : Infinity Yield, Fisch, BedWars, King Legacy, Rival, Prison Life, The Strongest Battle Ground, Randomly Generated Droids, Parkour -- A total of 9 scripts
+    |Lastest Update = 2025-02-06
      |Made By @Ledolium 
 ]]
 
 --- RayField
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 --- RayField
- 
+
 --- Window Start
 local Window = Rayfield:CreateWindow({
    Name = "Script Hub",
    Icon = 10783216485, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
    LoadingTitle = "L's Script Hub",
-   LoadingSubtitle = "by @Ledolium V1.55",
+   LoadingSubtitle = "by @Ledolium V2.0",
    Theme = "DarkBlue", -- Check https://docs.sirius.menu/rayfield/configuration/themes
- 
+
    DisableRayfieldPrompts = false,
    DisableBuildWarnings = false, -- Prevents Rayfield from warning when the script has a version mismatch with the interface
-   --- Window End
 
- --- ConfigurationSaving
+   --- ConfigurationSaving
    ConfigurationSaving = {
       Enabled = true,
-      FolderName = LSHub, -- Create a custom folder for your hub/game
+      FolderName = "LSHub", -- Create a custom folder for your hub/game
       FileName = "SaveFile"
    },
---- ConfigurationSaving
- 
---- Discord Start
+   --- ConfigurationSaving
+
+   --- Discord Start
    Discord = {
       Enabled = false, -- Prompt the user to join your Discord server if their executor supports it
       Invite = "noinvitelink", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ ABCD would be ABCD
       RememberJoins = true -- Set this to false to make them join the discord every time they load it up
    },
---- Discord End
- 
---- Key System Start
+   --- Discord End
+
+   --- Key System Start
    KeySystem = true, -- Set this to true to use our key system
    KeySettings = {
       Title = "@Ledolium's Script Hub",
@@ -50,42 +49,59 @@ local Window = Rayfield:CreateWindow({
    }
 })
 --- Key System End
- 
---- Main Tab Start
-local MainTab = Window:CreateTab("Main", 903318290) -- Title, Image
-local MainSection = MainTab:CreateSection("Main")
---- Main Tab End
- 
---- Main Tab Button Start
 
---[[
-     Ctrl C + V
-local Button = MainTab:CreateButton({ 
-   Name = "",
+--- Notify System
+Rayfield:Notify({
+   Title = "Load",
+   Content  = "Loading Complete!",
+   Duration = 6.5,
+   Image = 9425193028,
    Callback = function()
- loadstring(game:HttpGet(""))()
+   Print ("Complete")
    end,
 })
-]]
+
+--- Credit Tab
+local CreditTab = Window:CreateTab("Credit", 903318290) -- Title, Image
+local CreditSection = CreditTab:CreateSection("Credit")
+
+--- Credittab TextBox
+local Label = CreditTab:CreateLabel("Credit : @Ledolium", 8120666025, Color3.fromRGB(15, 20, 30), true) -- Title, Icon, Color, IgnoreTheme
+
+--- Admin Scripts Tab
+local AdminTab = Window:CreateTab("Admin Scripts", 924121207) -- Title, Image
+local AdminSection = AdminTab:CreateSection("Admin Scripts")
 
 --- Infinity Yield Script
-local Button = MainTab:CreateButton({
+local Button = AdminTab:CreateButton({
    Name = "Infinity Yield",
    Callback = function()
    loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
    end,
 })
 
---- Fisch Script
-local Button = MainTab:CreateButton({
-   Name = "Fisch Script",
+--- QuirkyCMD Script
+local Button = AdminTab:CreateButton({
+   Name = "QuirkyCMD",
+   Callback = function()
+   loadstring(game:HttpGet("https://gist.github.com/someunknowndude/38cecea5be9d75cb743eac8b1eaf6758/raw"))()
+   end,
+})
+
+--- Fisch Scripts
+local FischTab = Window:CreateTab("Fisch Scripts", 14000021818) -- Title, Image
+local FischSection = FischTab:CreateSection("Fisch Scripts")
+
+--- Fisch Script 1
+local Button = FischTab:CreateButton({
+   Name = "Fisch Script 1",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/kylosilly/femboyware/refs/heads/main/Fisch.lua"))()
    end,
 })
 
 --- Fisch Script 2
-local Button = MainTab:CreateButton({ 
+local Button = FischTab:CreateButton({ 
    Name = "Fisch Script 2",
    Callback = function()
  loadstring(game:HttpGet("https://raw.githubusercontent.com/Just3itx/Lunor-Loadstrings/refs/heads/main/Loader"))()
@@ -93,76 +109,109 @@ local Button = MainTab:CreateButton({
 })
 
 --- Fisch Script 3
-local Button = MainTab:CreateButton({ 
+local Button = FischTab:CreateButton({ 
    Name = "Fisch Script 3",
    Callback = function()
  loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
    end,
 })
 
+--- Bedwars Scripts
+local BedwarsTab = Window:CreateTab("Bedwars Scripts", 6510204771) -- Title, Image
+local BedwarsSection = BedwarsTab:CreateSection("Bedwars Scripts")
+
 --- BedWars Script
-local Button = MainTab:CreateButton({
+local Button = BedwarsTab:CreateButton({
    Name = "BedWars Script",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/VapeVoidware/vapevoidware/main/NewMainScript.lua", true))()
    end,
 })
 
---- KL Script
-local Button = MainTab:CreateButton({
-   Name = "King Lagacy Script",
+--- King Legacy Scripts
+local KingLagacyTab = Window:CreateTab("King Legacy Scripts", 17227111462) -- Title, Image
+local KingLagacySection = KingLagacyTab:CreateSection("King Legacy Scripts")
+
+--- King Legacy Script
+local Button = KingLagacyTab:CreateButton({
+   Name = "King Legacy Script",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/ChopLoris/ArcHub/main/main.lua"))()
    end,
 })
 
---- Rival Script
-local Button = MainTab:CreateButton({
-   Name = "Rival Script",
+--- Rival Scripts
+local RivalTab = Window:CreateTab("Rival Scripts", 1274310348) -- Title, Image
+local RivalSection = RivalTab:CreateSection("Rival Scripts")
+
+--- Rival Script 1
+local Button = RivalTab:CreateButton({
+   Name = "Rival Script 1",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/QP-Korea/ScriptForRoblox/refs/heads/main/Rivals"))()
    end,
 })
 
---- PL Script
-local Button = MainTab:CreateButton({
+--- Rival Script 2
+local Button = RivalTab:CreateButton({ 
+   Name = "Rival Script 2",
+   Callback = function()
+loadstring(game:HttpGet("https://get-8bit.freewebhostmost.com/scripts/?script=rivalsv3.lua"))()
+   end,
+})
+
+--- Prison Life Scripts
+local PrisonLifeTab = Window:CreateTab("Prison Life Scripts", 1978722882) -- Title, Image
+local PrisonLifeSection = PrisonLifeTab:CreateSection("Prison Life Scripts")
+
+--- Prison Life Script
+local Button = PrisonLifeTab:CreateButton({
    Name = "Prison Life Script",
    Callback = function()
    loadstring(game:HttpGet('https://raw.githubusercontent.com/elliexmln/PrizzLife/main/pladmin.lua'))()
    end,
 })
 
---- TSB Script
-local Button = MainTab:CreateButton({
-   Name = "TSB Script",
+--- The Strongest BattleGround Scripts
+local TSBTab = Window:CreateTab("The Strongest BattleGround Scripts", 7617067045) -- Title, Image
+local TSBSection = TSBTab:CreateSection("The Strongest BattleGround Scripts")
+
+--- The Strongest BattleGround Script
+local Button = TSBTab:CreateButton({
+   Name = "The Strongest BattleGround Script",
    Callback = function()
  loadstring(game:HttpGet("https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/main/scripts/TSBUtils.lua"))()
    end,
 })
 
---- RGD Script
-local Button = MainTab:CreateButton({
-   Name = "RGD Script",
+--- Randomly Generated Droids Scripts
+local RGDTab = Window:CreateTab("Randomly Generated Droids Scripts", 12143948578) -- Title, Image
+local RGDSection = RGDTab:CreateSection("Randomly Generated Droids Scripts")
+
+--- Randomly Generated Droids Script
+local Button = RGDTab:CreateButton({
+   Name = "Randomly Generated Droids Script",
    Callback = function()
  loadstring(game:HttpGet("https://raw.githubusercontent.com/NICKISBAD/Randomly-Generated-Droids/refs/heads/main/V1.1"))()
    end,
 })
 
+--- Parkour Scripts
+local ParkourTab = Window:CreateTab("Parkour Scripts", 12810822812) -- Title, Image
+local ParkourSection = ParkourTab:CreateSection("Parkour Scripts")
+
 --- Parkour script
-local Button = MainTab:CreateButton({
+local Button = ParkourTab:CreateButton({
    Name = "Parkour Script",
    Callback = function()
  loadstring(game:HttpGet("https://raw.githubusercontent.com/charlesqwc/ParkourLegacyOPPoints/main/Points"))()
    end,
 })
 
---- Main Tab Button End
- 
 --- Misc Tab Start
 local MiscTab = Window:CreateTab("Misc", 8660789917) -- Title, Image
 local MiscSection = MiscTab:CreateSection("Misc")
---- Misc Tab End
- 
+
 --- Misc Tab Button Start
 local Slider = MiscTab:CreateSlider({
    Name = "Speed",
@@ -175,5 +224,4 @@ local Slider = MiscTab:CreateSlider({
      game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = (Value)
    end,
 })
-
 --- Misc Tab Button End
