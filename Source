@@ -56,9 +56,6 @@ Rayfield:Notify({
    Content  = "Loading Complete!",
    Duration = 6.5,
    Image = 9425193028,
-   Callback = function()
-   Print ("Complete")
-   end,
 })
 
 --- Credit Tab
